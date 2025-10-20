@@ -5,7 +5,7 @@ import math
 pygame.init()
 
 # Schermo
-WIDTH, HEIGHT = 800, 600
+WIDTH, HEIGHT = 1360, 800
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Arena Shooter")
 
@@ -110,3 +110,4 @@ while running:
     pygame.display.flip()
 
 pygame.quit()
+
