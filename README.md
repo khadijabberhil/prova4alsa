@@ -1,6 +1,6 @@
 # prova4alsa
 
->lezione1: aggiunta collisioni (Khadija)
+>lezione1: aggiunta collisioni e vita (Khadija)
 
 >lezione2: nemici con più vita (Janet)
 
