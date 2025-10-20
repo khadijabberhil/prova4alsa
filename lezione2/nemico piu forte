@@ -1,1 +1,49 @@
+#Esempio base di codice per un nemico con più punti vita
+import pygame
 
+class Enemy:
+    def __init__(self, x, y, health=3):
+        self.x = x
+        self.y = y
+        self.health = health  # punti vita del nemico
+        self.width = 40
+        self.height = 40
+        self.color = (255, 0, 0)  # rosso
+
+    def draw(self, screen):
+        pygame.draw.rect(screen, self.color, (self.x, self.y, self.width, self.height))
+
+    def hit(self, damage=1):
+        self.health -= damage
+        if self.health <= 0:
+            return True  # il nemico è morto
+        return False
+
+Spiegazione dettagliata
+
+Classe Enemy: Definisce un nemico nel gioco.
+
+Attributo health: È il numero di punti vita del nemico. Qui è inizializzato a 3, quindi serve colpirlo 3 volte (o infliggergli 3 danni) per eliminarlo.
+
+Metodo draw(screen): Disegna un rettangolo rosso sullo schermo, che rappresenta il nemico.
+
+Metodo hit(damage=1): Viene chiamato ogni volta che il nemico viene colpito. Diminuisce i punti vita del nemico di damage (default 1). Se la salute scende a 0 o meno, il metodo restituisce True per indicare che il nemico è morto e può essere rimosso dal gioco.
+
+Come usarlo nel gioco
+
+Quando il proiettile colpisce un nemico:
+
+for enemy in enemies_list:
+    if bullet.collides_with(enemy):
+        if enemy.hit():
+            enemies_list.remove(enemy)  # elimina il nemico se morto
+        bullets_list.remove(bullet)  # elimina il proiettile
+
+Come creare un nemico più forte?
+
+Basta creare un oggetto Enemy con un valore di health più alto, ad esempio:
+
+strong_enemy = Enemy(100, 100, health=10)  # nemico con 10 punti vita
+
+
+Così, serviranno più colpi per eliminarlo.
