@@ -47,3 +47,31 @@ strong_enemy = Enemy(100, 100, health=10)  # nemico con 10 punti vita
 
 
 Così, serviranno più colpi per eliminarlo.
+
+
+
+
+
+
+temporizzazione spawn 
+enemy_timer += 1
+if enemy_timer >= enemy_spawn_delay:
+    spawn_enemy()
+    enemy_timer = 0
+
+movimento nemici 
+
+
+
+for enemy in enemies[:]:
+    dx = player_pos[0] - enemy[0]
+    dy = player_pos[1] - enemy[1]
+    dist = math.hypot(dx, dy)
+    if dist != 0:
+        enemy[0] += enemy_speed * (dx / dist)
+        enemy[1] += enemy_speed * (dy / dist)
+
+
+
+
+
