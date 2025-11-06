@@ -5,3 +5,7 @@
 Ogni proiettile è rappresentato come una lista di tre valori:
 [x,y,angle]
 
+## b) Creazione del proiettile ( sparo) 
+Quando l'utente clicca col tasto sinistro del mouse: 
+
+
