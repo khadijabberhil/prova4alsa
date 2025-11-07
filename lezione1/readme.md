@@ -1,10 +1,11 @@
 ## SEZIONE 1 — Inizializzazione del gioco
 Questa parte serve per preparare l’ambiente di Pygame, cioè creare lo schermo, impostare titolo e clock.
-import pygame
+```import pygame
 import random
 import math
 
 pygame.init()
+```
 
 # Schermo
 WIDTH, HEIGHT = 1360, 800
