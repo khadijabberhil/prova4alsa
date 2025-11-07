@@ -2,7 +2,7 @@
 ## Analisi tecnica passo per passo
 ## a) rappresentazione dei proiettili
 
-Ogni proiettile è rappresentato come una lista di tre valori: 
+Ogni proiettile è rappresentato come una lista di tre valori:  
 [x,y,angle]
 
 ## b) Creazione del proiettile ( sparo) 
