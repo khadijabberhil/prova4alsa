@@ -1,4 +1,5 @@
 ## Lezione 2: Sistema di sparo
+## Parti del codice coinvol
 ## Analisi tecnica passo per passo
 ## a) rappresentazione dei proiettili
 
