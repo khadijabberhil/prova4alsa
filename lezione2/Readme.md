@@ -48,12 +48,17 @@ Qui avviene la traslazione del proiettile nello spazio.
 
 Quindi il proiettile si muove in linea retta nella direzione calcolata all'atto dello sparo.
 
-# d) Eliminazione dei proiettili fuori dallo schermo  
+## d) Eliminazione dei proiettili fuori dallo schermo  
 Per evitare che la lista cresca all’infinito, i proiettili vengono rimossi quando escono dallo schermo:
 ```
 if bullet[0] < 0 or bullet[0] > WIDTH or bullet[1] < 0 or bullet[1] > HEIGHT:
     bullets.remove(bullet)
-`
+```
+## e) Disegno del proiettile 
+Se il proiettile è ancora sullo schermo, viene disegnato come un piccolo cerchio giallo: 
+```
+pygame.draw.circle(screen, (255, 255, 0), (int(bullet[0]), int(bullet[1])), 5)
+```
 
 
 
