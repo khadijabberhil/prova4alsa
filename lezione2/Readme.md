@@ -32,6 +32,9 @@ bullets.append([player_pos[0], player_pos[1], angle])
 ```
 Il proiettile parte dalla posizione attuale del giocatore e si muoverà nella direzione angle. 
 
+## c) Movimento del proiettile
+Si aggiorna posizione 
+
 
 
 
