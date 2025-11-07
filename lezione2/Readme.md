@@ -3,7 +3,7 @@
 ## a) rappresentazione dei proiettili
 
 Ogni proiettile è rappresentato come una lista di tre valori:  
-[x,y,angle]
+[x,y,angle]  
 x,y = coordinate attuali del proiettile sullo schermo  
 angle = direzione del moto ( in radianti), calcolata rispetto al giocatore e alla posizione del mouse
 
