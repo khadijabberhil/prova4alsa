@@ -33,7 +33,12 @@ bullets.append([player_pos[0], player_pos[1], angle])
 Il proiettile parte dalla posizione attuale del giocatore e si muoverà nella direzione angle. 
 
 ## c) Movimento del proiettile
-Si aggiorna posizione 
+Si aggiorna posizione con cos/sin ( angle) 
+
+Ogni frame, nel ciclo principale, i proiettili vengono aggiornati: 
+
+for bullet in bullets[:]:  
+bullet[0] += bullet_speed* math.cos( bullet[2]) 
 
 
 
