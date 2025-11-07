@@ -36,9 +36,27 @@ Il proiettile parte dalla posizione attuale del giocatore e si muoverà nella di
 Si aggiorna posizione con cos/sin ( angle) 
 
 Ogni frame, nel ciclo principale, i proiettili vengono aggiornati: 
-
+```
 for bullet in bullets[:]:  
 bullet[0] += bullet_speed* math.cos( bullet[2]) 
+bullet [1] += bullet_ speed* math.sin(bullet[2])
+```
+Qui avviene la traslazione del proiettile nello spazio.  
+- math.cos(angle)è la componente orizzontale del movimento.
+- math.sin(angle) é la componente verticale
+- bullet_speed, è la velocità ( in pixel per frame)
+
+Quindi il proiettile si muove in linea retta nella direzione calcolata all'atto dello sparo.
+
+# d) Eliminazione dei proiettili fuori dallo schermo  
+Per evitare che la lista cresca all’infinito, i proiettili vengono rimossi quando escono dallo schermo:
+```
+if bullet[0] < 0 or bullet[0] > WIDTH or bullet[1] < 0 or bullet[1] > HEIGHT:
+    bullets.remove(bullet)
+`
+
+
+
 
 
 
