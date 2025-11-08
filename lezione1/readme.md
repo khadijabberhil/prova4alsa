@@ -81,6 +81,6 @@ Usi player_pos[0] - player_size // 2 per centrare il rettangolo rispetto alle co
 
 ## “Questa funzione disegna il mio giocatore come un rettangolo blu, centrato sulla sua posizione. Ad ogni frame, viene ridisegnato nella nuova posizione aggiornata.”
 
-## 💡 CONCLUSIONE (come chiudere la spiegazione)
+## 💡 CONCLUSIONE 
 
 # “In questa parte del codice ho creato il giocatore e il suo movimento. Ho impostato la posizione iniziale al centro dello schermo e ho gestito i movimenti con i tasti W, A, S, D. Ho aggiunto condizioni per evitare che il giocatore esca fuori dai bordi dello schermo. Infine, disegno il rettangolo che rappresenta il mio personaggio ad ogni frame, così si aggiorna visivamente.”
