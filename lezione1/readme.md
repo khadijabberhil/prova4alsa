@@ -27,9 +27,10 @@ serve per controllare il numero di frame al secondo (FPS), così il gioco è flu
 ## 🎮 SEZIONE 2 — Creazione del giocatore
 Qui crei il giocatore, cioè un semplice rettangolo blu.
 # Giocatore
-player_size = 40
+```player_size = 40
 player_pos = [WIDTH // 2, HEIGHT // 2]
 player_speed = 5
+```
 ## SPIEGAZIONE DELLA CREAZIONE DEL GIOCO 
 # player_size 
 è la grandezza del quadrato.
@@ -42,7 +43,7 @@ definisce quanto si muove ad ogni frame.
 ## “Qui creo il mio giocatore come un quadrato di 40 pixel, posizionato al centro dello schermo, con una velocità di movimento pari a 5 pixel per frame.”
 ## 🕹️ SEZIONE 3 — Movimento del giocatore!!!
 Permette al giocatore di muoversi con i tasti W, A, S, D e non uscire dai bordi.
-keys = pygame.key.get_pressed()
+```keys = pygame.key.get_pressed()
 if keys[pygame.K_w] and player_pos[1] > 0:
     player_pos[1] -= player_speed
 if keys[pygame.K_s] and player_pos[1] < HEIGHT:
@@ -51,6 +52,7 @@ if keys[pygame.K_a] and player_pos[0] > 0:
     player_pos[0] -= player_speed
 if keys[pygame.K_d] and player_pos[0] < WIDTH:
     player_pos[0] += player_speed
+```
 ## Spiegazione sul come fare il movimento:
 # pygame.key.get_pressed()
 controlla quali tasti sono premuti.
@@ -65,10 +67,11 @@ Le condizioni con i bordi (> 0 e < WIDTH / HEIGHT) impediscono di uscire dallo s
 
 ## 🧱 SEZIONE 4 — Disegno del giocatore sullo schermo
 Dopo aver aggiornato la posizione, serve ridisegnare il giocatore.
-pygame.draw.rect(screen, (0, 150, 255),
+```pygame.draw.rect(screen, (0, 150, 255),
                  (player_pos[0] - player_size // 2,
                   player_pos[1] - player_size // 2,
                   player_size, player_size))
+```
 # 👉Spiegazione su come disegnare il giocatore sullo schermo :
 pygame.draw.rect() disegna un rettangolo:
 screen → dove disegnarlo
