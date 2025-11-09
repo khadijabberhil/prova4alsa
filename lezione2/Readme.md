@@ -1,5 +1,32 @@
 ## Lezione 2: Sistema di sparo
-## Parti del codice coinvol
+## Le sezioni del codice che gestiscono lo sparo e il movimento dei proiettili sono queste:
+```
+# Liste per proiettili
+bullets = []
+
+# Parametri
+bullet_speed = 10
+
+# --- Dentro il ciclo principale ---
+
+# Evento di sparo (clic sinistro del mouse)
+if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+    mx, my = pygame.mouse.get_pos()
+    dx = mx - player_pos[0]
+    dy = my - player_pos[1]
+    angle = math.atan2(dy, dx)
+    bullets.append([player_pos[0], player_pos[1], angle])
+
+# Gestione proiettili
+for bullet in bullets[:]:
+    bullet[0] += bullet_speed * math.cos(bullet[2])
+    bullet[1] += bullet_speed * math.sin(bullet[2])
+
+    if bullet[0] < 0 or bullet[0] > WIDTH or bullet[1] < 0 or bullet[1] > HEIGHT:
+        bullets.remove(bullet)
+    else:
+        pygame.draw.circle(screen, (255, 255, 0), (int(bullet[0]), int(bullet[1])), 5)
+```
 ## Analisi tecnica passo per passo
 ## a) rappresentazione dei proiettili
 
