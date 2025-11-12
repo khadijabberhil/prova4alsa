@@ -24,7 +24,7 @@ definiscono la grandezza della finestra.
 serve per controllare il numero di frame al secondo (FPS), così il gioco è fluido.
 
 # “Questa parte serve per creare la finestra del gioco e impostare le dimensioni dello schermo dove si muoverà il mio giocatore.”
-## 🎮 SEZIONE 2 — Creazione del giocatore
+##  SEZIONE 2 — Creazione del giocatore
 Qui crei il giocatore, cioè un semplice rettangolo blu.
 # Giocatore
 ```player_size = 40
@@ -79,8 +79,8 @@ screen → dove disegnarlo
 le coordinate (x, y, width, height) → definiscono la posizione e la grandezza.
 Usi player_pos[0] - player_size // 2 per centrare il rettangolo rispetto alle coordinate del giocatore.
 
-## “Questa funzione disegna il mio giocatore come un rettangolo blu, centrato sulla sua posizione. Ad ogni frame, viene ridisegnato nella nuova posizione aggiornata.”
+# “Questa funzione disegna il mio giocatore come un rettangolo blu, centrato sulla sua posizione. Ad ogni frame, viene ridisegnato nella nuova posizione aggiornata.”
 
 ##  CONCLUSIONE 
 
-# “In questa parte del codice ho creato il giocatore e il suo movimento. Ho impostato la posizione iniziale al centro dello schermo e ho gestito i movimenti con i tasti W, A, S, D. Ho aggiunto condizioni per evitare che il giocatore esca fuori dai bordi dello schermo. Infine, disegno il rettangolo che rappresenta il mio personaggio ad ogni frame, così si aggiorna visivamente.”
+#“In questa parte del codice ho creato il giocatore e il suo movimento. Ho impostato la posizione iniziale al centro dello schermo e ho gestito i movimenti con i tasti W, A, S, D. Ho aggiunto condizioni per evitare che il giocatore esca fuori dai bordi dello schermo. Infine, disegno il rettangolo che rappresenta il mio personaggio ad ogni frame, così si aggiorna visivamente.”
