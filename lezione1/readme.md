@@ -22,7 +22,7 @@ definiscono la grandezza della finestra.
 # clock 
 serve per controllare il numero di frame al secondo (FPS), così il gioco è fluido.
 
-# “Questa parte serve per creare la finestra del gioco e impostare le dimensioni dello schermo dove si muoverà il mio giocatore.”
+## questa parte serve per creare la finestra del gioco e impostare le dimensioni dello schermo dove si muoverà il mio giocatore.
 ##  SEZIONE 2 — Creazione del giocatore
 Qui crei il giocatore, cioè un semplice rettangolo blu.
 # Giocatore
@@ -39,7 +39,7 @@ Usi WIDTH // 2 e HEIGHT // 2 per posizionarlo al centro dello schermo.
 # player_speed 
 definisce quanto si muove ad ogni frame.
 
-## “Qui creo il mio giocatore come un quadrato di 40 pixel, posizionato al centro dello schermo, con una velocità di movimento pari a 5 pixel per frame.”
+## Qui creo il mio giocatore come un quadrato di 40 pixel, posizionato al centro dello schermo, con una velocità di movimento pari a 5 pixel per frame.
 ## SEZIONE 3 — Movimento del giocatore!!!
 Permette al giocatore di muoversi con i tasti W, A, S, D e non uscire dai bordi.
 ```keys = pygame.key.get_pressed()
@@ -62,7 +62,7 @@ S: giù → aumenta y
 A: sinistra → diminuisce x
 D: destra → aumenta x
 Le condizioni con i bordi (> 0 e < WIDTH / HEIGHT) impediscono di uscire dallo schermo.
-## “Ogni volta che premo un tasto, il programma aggiorna la posizione del giocatore. Le condizioni di controllo assicurano che il giocatore non esca mai dallo schermo: per esempio, non posso andare oltre il bordo sinistro se la x è già 0.”
+## Ogni volta che premo un tasto, il programma aggiorna la posizione del giocatore. Le condizioni di controllo assicurano che il giocatore non esca mai dallo schermo: per esempio, non posso andare oltre il bordo sinistro se la x è già 0.
 
 ## SEZIONE 4 — Disegno del giocatore sullo schermo
 Dopo aver aggiornato la posizione, serve ridisegnare il giocatore.
@@ -78,7 +78,7 @@ screen → dove disegnarlo
 le coordinate (x, y, width, height) → definiscono la posizione e la grandezza.
 Usi player_pos[0] - player_size // 2 per centrare il rettangolo rispetto alle coordinate del giocatore.
 
-# “Questa funzione disegna il mio giocatore come un rettangolo blu, centrato sulla sua posizione. Ad ogni frame, viene ridisegnato nella nuova posizione aggiornata.”
+# Questa funzione disegna il mio giocatore come un rettangolo blu, centrato sulla sua posizione. Ad ogni frame, viene ridisegnato nella nuova posizione aggiornata.
 
 ##  CONCLUSIONE 
 
