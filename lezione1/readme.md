@@ -41,7 +41,7 @@ Usi WIDTH // 2 e HEIGHT // 2 per posizionarlo al centro dello schermo.
 definisce quanto si muove ad ogni frame.
 
 ## “Qui creo il mio giocatore come un quadrato di 40 pixel, posizionato al centro dello schermo, con una velocità di movimento pari a 5 pixel per frame.”
-## 🕹️ SEZIONE 3 — Movimento del giocatore!!!
+## SEZIONE 3 — Movimento del giocatore!!!
 Permette al giocatore di muoversi con i tasti W, A, S, D e non uscire dai bordi.
 ```keys = pygame.key.get_pressed()
 if keys[pygame.K_w] and player_pos[1] > 0:
@@ -65,14 +65,14 @@ D: destra → aumenta x
 Le condizioni con i bordi (> 0 e < WIDTH / HEIGHT) impediscono di uscire dallo schermo.
 ## “Ogni volta che premo un tasto, il programma aggiorna la posizione del giocatore. Le condizioni di controllo assicurano che il giocatore non esca mai dallo schermo: per esempio, non posso andare oltre il bordo sinistro se la x è già 0.”
 
-## 🧱 SEZIONE 4 — Disegno del giocatore sullo schermo
+## SEZIONE 4 — Disegno del giocatore sullo schermo
 Dopo aver aggiornato la posizione, serve ridisegnare il giocatore.
 ```pygame.draw.rect(screen, (0, 150, 255),
                  (player_pos[0] - player_size // 2,
                   player_pos[1] - player_size // 2,
                   player_size, player_size))
 ```
-# 👉Spiegazione su come disegnare il giocatore sullo schermo :
+# Spiegazione su come disegnare il giocatore sullo schermo :
 pygame.draw.rect() disegna un rettangolo:
 screen → dove disegnarlo
 (0,150,255) → colore (blu)
@@ -81,6 +81,6 @@ Usi player_pos[0] - player_size // 2 per centrare il rettangolo rispetto alle co
 
 ## “Questa funzione disegna il mio giocatore come un rettangolo blu, centrato sulla sua posizione. Ad ogni frame, viene ridisegnato nella nuova posizione aggiornata.”
 
-## 💡 CONCLUSIONE 
+##  CONCLUSIONE 
 
 # “In questa parte del codice ho creato il giocatore e il suo movimento. Ho impostato la posizione iniziale al centro dello schermo e ho gestito i movimenti con i tasti W, A, S, D. Ho aggiunto condizioni per evitare che il giocatore esca fuori dai bordi dello schermo. Infine, disegno il rettangolo che rappresenta il mio personaggio ad ogni frame, così si aggiorna visivamente.”
