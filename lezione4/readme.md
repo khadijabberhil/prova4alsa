@@ -16,13 +16,13 @@ Il blocco ```for event in pygame.event.get()```: gestisce gli eventi, come i tas
 ```if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:```: Se il tasto sinistro del mouse viene premuto, viene calcolato l'angolo tra la posizione del giocatore e la posizione del mouse, e un nuovo proiettile viene aggiunto alla lista bullets.
 
 # Movimento del Giocatore:
-Il blocco keys = pygame.key.get_pressed() controlla quali tasti sono premuti. Le istruzioni if spostano il giocatore in base ai tasti premuti (W, A, S, D), assicurandosi che il giocatore non esca dai bordi dello schermo.
+Il blocco ```keys = pygame.key.get_pressed()``` controlla quali tasti sono premuti. Le istruzioni if spostano il giocatore in base ai tasti premuti (W, A, S, D), assicurandosi che il giocatore non esca dai bordi dello schermo.
 
 # Disegno del Giocatore:
-pygame.draw.rect(...) disegna un rettangolo blu che rappresenta il giocatore nella sua posizione corrente.
+```pygame.draw.rect(...)``` disegna un rettangolo blu che rappresenta il giocatore nella sua posizione corrente.
 
 # Gestione dei Proiettili:
-Il ciclo for bullet in bullets[:] itera attraverso ogni proiettile nella lista bullets. L'uso di [:] crea una copia della lista, permettendo di rimuovere elementi dalla lista originale durante l'iterazione senza causare errori.
+Il ciclo ```for bullet in bullets[:]``` itera attraverso ogni proiettile nella lista bullets. L'uso di ```[:]``` crea una copia della lista, permettendo di rimuovere elementi dalla lista originale durante l'iterazione senza causare errori.
 bullet[0] += bullet_speed \* math.cos(bullet[2]) e bullet[1] += bullet_speed \* math.sin(bullet[2]) aggiornano la posizione di ogni proiettile in base alla sua velocità e all'angolo di direzione.
 Se un proiettile esce dallo schermo, viene rimosso dalla lista bullets.
 pygame.draw.circle(...) disegna un cerchio giallo per ogni proiettile.
