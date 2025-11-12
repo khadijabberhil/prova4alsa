@@ -6,13 +6,12 @@ import math
 
 pygame.init()
 ```
-
 # Schermo
-WIDTH, HEIGHT = 1360, 800
+ ```WIDTH, HEIGHT = 1360, 800
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Arena Shooter")
-
 clock = pygame.time.Clock()
+```
 ## SPIEGAZIONE DEL CODICE
 # pygame.init() 
 avvia tutte le funzioni di Pygame (audio, grafica, ecc.).
