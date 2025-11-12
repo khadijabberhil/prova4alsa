@@ -1,18 +1,19 @@
 # Lezione 4
+
 Il ciclo while running: è il cuore del gioco. Continua a girare finché la variabile running è True. Questo ciclo esegue le seguenti operazioni in ogni frame:
 
 # Controllo del Framerate:
-clock.tick(60) limita il gioco a 60 frame per secondo (FPS). Questo assicura che il gioco si muova a una velocità costante, indipendentemente dall'hardware su cui è eseguito.
+```clock.tick(60)``` limita il gioco a 60 frame per secondo (FPS). Questo assicura che il gioco si muova a una velocità costante, indipendentemente dall'hardware su cui è eseguito.
 
 # Svuotamento dello Schermo:
-screen.fill((30, 30, 30)) riempie lo schermo con un colore grigio scuro. Questo cancella il frame precedente, preparandolo per il nuovo frame da disegnare.
+```screen.fill((30, 30, 30))``` riempie lo schermo con un colore grigio scuro. Questo cancella il frame precedente, preparandolo per il nuovo frame da disegnare.
 
 # Gestione degli Eventi:
-Il blocco for event in pygame.event.get(): gestisce gli eventi, come i tasti premuti e i movimenti del mouse.
+Il blocco ```for event in pygame.event.get()```: gestisce gli eventi, come i tasti premuti e i movimenti del mouse.
 
-if event.type == pygame.QUIT:: Se l'utente chiude la finestra, running viene impostato su False, interrompendo il ciclo e terminando il gioco.
+```if event.type == pygame.QUIT:```: Se l'utente chiude la finestra, running viene impostato su False, interrompendo il ciclo e terminando il gioco.
 
-if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:: Se il tasto sinistro del mouse viene premuto, viene calcolato l'angolo tra la posizione del giocatore e la posizione del mouse, e un nuovo proiettile viene aggiunto alla lista bullets.
+```if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:```: Se il tasto sinistro del mouse viene premuto, viene calcolato l'angolo tra la posizione del giocatore e la posizione del mouse, e un nuovo proiettile viene aggiunto alla lista bullets.
 
 # Movimento del Giocatore:
 Il blocco keys = pygame.key.get_pressed() controlla quali tasti sono premuti. Le istruzioni if spostano il giocatore in base ai tasti premuti (W, A, S, D), assicurandosi che il giocatore non esca dai bordi dello schermo.
