@@ -1,5 +1,7 @@
 ## Lezione 2: Sistema di sparo
 Le sezioni del codice che gestiscono lo sparo e il movimento dei proiettili sono queste:
+![GIF da Giphy](https://media.giphy.com/media/yourgif.gif)
+
 ```
 # Liste per proiettili
 bullets = []
