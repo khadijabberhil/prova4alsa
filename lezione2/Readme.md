@@ -35,7 +35,9 @@ for bullet in bullets[:]:
 ```
 ## Analisi tecnica passo per passo
 ## a) rappresentazione dei proiettili
-
+```
+"" To do 
+```
 Ogni proiettile è rappresentato come una lista di tre valori:  
 [x,y,angle]  
 x,y = coordinate attuali del proiettile sullo schermo  
