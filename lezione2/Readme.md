@@ -1,6 +1,8 @@
 ## Lezione 2: Sistema di sparo
 Le sezioni del codice che gestiscono lo sparo e il movimento dei proiettili sono queste:
-![GIF da Giphy](https://media.giphy.com/media/yourgif.gif)
+Prova il gioco qui: [Trinket Game Link](https://trinket.io/pygame/1faf5ccc5113)
+
+
 
 ```
 # Liste per proiettili
