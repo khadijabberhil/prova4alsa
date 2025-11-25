@@ -45,8 +45,7 @@ angle = direzione del moto ( in radianti), calcolata rispetto al giocatore e all
 ## b) Creazione del proiettile ( sparo) 
 Quando l'utente clicca col tasto sinistro del mouse:  
 ``` python
-if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
-    mx, my = pygame.mouse.get_pos()
+## To do
 ```
 mx,my sono le coordinate del mouse sullo schermo
 
@@ -59,11 +58,8 @@ angle= math.atan2(dy,dx)
 
 math.atan2(dy,dx) restituisce l'angolo ( in radianti) fra l'asse X e la linea che unisce il giocatore al puntatore, gestendo automaticamente i segni di dx/dy ( quindi anche i quadranti giusti).
 
-Infine si crea e salva il proiettile nella lista:
+Infine si crea e salva il proiettile nella lista
 
-```
-bullets.append([player_pos[0], player_pos[1], angle])
-```
 Il proiettile parte dalla posizione attuale del giocatore e si muoverà nella direzione angle. 
 
 ## c) Movimento del proiettile
@@ -71,9 +67,7 @@ Si aggiorna posizione con cos/sin ( angle)
 
 Ogni frame, nel ciclo principale, i proiettili vengono aggiornati: 
 ```
-for bullet in bullets[:]:  
-bullet[0] += bullet_speed* math.cos( bullet[2]) 
-bullet [1] += bullet_ speed* math.sin(bullet[2])
+##To do
 ```
 Qui avviene la traslazione del proiettile nello spazio.  
 - math.cos(angle)è la componente orizzontale del movimento.
@@ -85,13 +79,12 @@ Quindi il proiettile si muove in linea retta nella direzione calcolata all'atto 
 ## d) Eliminazione dei proiettili fuori dallo schermo  
 Per evitare che la lista cresca all’infinito, i proiettili vengono rimossi quando escono dallo schermo:
 ```
-if bullet[0] < 0 or bullet[0] > WIDTH or bullet[1] < 0 or bullet[1] > HEIGHT:
-    bullets.remove(bullet)
+## To do
 ```
 ## e) Disegno del proiettile 
 Se il proiettile è ancora sullo schermo, viene disegnato come un piccolo cerchio giallo: 
 ```
-pygame.draw.circle(screen, (255, 255, 0), (int(bullet[0]), int(bullet[1])), 5)
+## To do
 ```
 
 
