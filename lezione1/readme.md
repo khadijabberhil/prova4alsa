@@ -5,10 +5,7 @@ Prova il gioco qui: Trinket Game Link https://trinket.io/pygame/1faf5ccc5113
 ## SEZIONE 1 — Inizializzazione del gioco
 Questa parte serve per preparare l’ambiente di Pygame, cioè creare lo schermo, impostare titolo e clock.
 ```import pygame
-import random
-import math
-
-pygame.init()
+##TO do##
 ```
 # Schermo
  ```WIDTH, HEIGHT = 1360, 800
